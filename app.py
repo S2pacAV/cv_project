@@ -39,19 +39,19 @@ with col1:
     st.markdown("**Детекция судов**")
     st.image("https://zastavok.net/temp/wp_1024x600_ships_1554017665.jpg", 
              caption="Обнаружение судов на аэроснимках", 
-             use_column_width=True)
+             use_container_width=True)
 
 with col2:
     st.markdown("**Детекция лиц с размытием**")
     st.image("https://www.shutterstock.com/image-photo/excited-multiethnic-group-people-260nw-530085697.jpg", 
              caption="Размытие лиц для защиты приватности", 
-             use_column_width=True)
+             use_container_width=True)
 
 with col3:
     st.markdown("**Семантическая сегментация**")
     st.image("https://russian.news.cn/photo/2016-12/06/135883913_14809906178831n.jpg", 
              caption="Сегментация аэрокосмических снимков", 
-             use_column_width=True)
+             use_container_width=True)
 
 # Дополнительная информация
 st.markdown("---")
