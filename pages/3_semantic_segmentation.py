@@ -96,18 +96,18 @@ if model_loaded:
                     col1, col2, col3 = st.columns(3)
                     with col1:
                         st.subheader("Исходное изображение")
-                        st.image(original, use_column_width=True)
+                        st.image(original, use_container_width=True)
                     
                     with col2:
                         st.subheader("Предсказанная маска")
                         # Преобразуем маску в формат для отображения (серая маска)
                         mask_display = (mask * 255).astype(np.uint8)
                         mask_image = Image.fromarray(mask_display, mode='L')
-                        st.image(mask_image, use_column_width=True)
+                        st.image(mask_image, use_container_width=True)
                     
                     with col3:
                         st.subheader("Результат сегментации")
-                        st.image(overlay, use_column_width=True)
+                        st.image(overlay, use_container_width=True)
                     
                     # Статистика по маске
                     total_pixels = mask.shape[0] * mask.shape[1]
@@ -154,18 +154,18 @@ if model_loaded:
                     col1, col2, col3 = st.columns(3)
                     with col1:
                         st.subheader("Исходное изображение")
-                        st.image(original, use_column_width=True)
+                        st.image(original, use_container_width=True)
                     
                     with col2:
                         st.subheader("Предсказанная маска")
                         # Преобразуем маску в формат для отображения (серая маска)
                         mask_display = (mask * 255).astype(np.uint8)
                         mask_image = Image.fromarray(mask_display, mode='L')
-                        st.image(mask_image, use_column_width=True)
+                        st.image(mask_image, use_container_width=True)
                     
                     with col3:
                         st.subheader("Результат сегментации")
-                        st.image(overlay, use_column_width=True)
+                        st.image(overlay, use_container_width=True)
                     
                     # Статистика по маске
                     total_pixels = mask.shape[0] * mask.shape[1]

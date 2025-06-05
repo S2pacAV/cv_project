@@ -94,11 +94,11 @@ with tab1:
                 col1, col2 = st.columns(2)
                 with col1:
                     st.subheader("Исходное изображение")
-                    st.image(image, use_column_width=True)
+                    st.image(image, use_container_width=True)
                 
                 with col2:
                     st.subheader("Результат детекции")
-                    st.image(result_image, use_column_width=True)
+                    st.image(result_image, use_container_width=True)
                 
                 # Информация о детекциях
                 if len(result.boxes) > 0:
@@ -138,11 +138,11 @@ with tab2:
                 col1, col2 = st.columns(2)
                 with col1:
                     st.subheader("Исходное изображение")
-                    st.image(url, use_column_width=True)
+                    st.image(url, use_container_width=True)
                 
                 with col2:
                     st.subheader("Результат детекции")
-                    st.image(result_image, use_column_width=True)
+                    st.image(result_image, use_container_width=True)
                 
                 # Информация о детекциях
                 if len(result.boxes) > 0:
