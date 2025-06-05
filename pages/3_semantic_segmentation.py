@@ -27,7 +27,7 @@ st.title("Семантическая сегментация аэрокосмич
 @st.cache_resource
 def load_model():
     # Загружаем модель U-Net
-    model_path = "/home/s2pac/ElbrusBootcamp/Nikitaproject/prodject/best_model.pth"
+    model_path = "models/ForestYOLO.pth"
     return UNetSegmentator(model_path)
 
 try:

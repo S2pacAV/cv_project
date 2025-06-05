@@ -27,7 +27,7 @@ st.title("Детекция лиц с размытием")
 @st.cache_resource
 def load_model():
     # Загружаем модель детекции лиц
-    model_path = "/home/s2pac/ElbrusBootcamp/ZhenyaProject/runs/detect/train/weights2/best.pt"
+    model_path = "models/FaceYOLO.pt"
     return FaceDetector(model_path)
 
 detector = load_model()
