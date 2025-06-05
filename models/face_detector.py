@@ -9,7 +9,7 @@ import requests
 from io import BytesIO
 
 class FaceDetector:
-    def __init__(self, model_path="/home/s2pac/ElbrusBootcamp/cv_project/models/FaceYOLO.pt"):
+    def __init__(self, model_path="models/FaceYOLO.pt"):
         """
         Инициализация детектора лиц на базе YOLO с функцией размытия
         

@@ -9,7 +9,7 @@ import requests
 from io import BytesIO
 
 class ShipDetector:
-    def __init__(self, model_path= "/home/s2pac/ElbrusBootcamp/cv_project/models/ShipYOLO.pt"):
+    def __init__(self, model_path= "models/ShipYOLO.pt"):
         """
         Инициализация детектора судов на базе YOLO
         
@@ -21,7 +21,7 @@ class ShipDetector:
         # Если путь к модели не указан, используем предобученную модель YOLOv8
         if model_path is None or not os.path.exists(model_path):
             print(f"Используется моя обученная модель")
-            self.model = YOLO('/home/s2pac/ElbrusBootcamp/cv_project/models/ShipYOLO.pt')
+            self.model = YOLO('models/ShipYOLO.pt')
         else:
             print(f"Загрузка модели из {model_path}")
             self.model = YOLO(model_path)

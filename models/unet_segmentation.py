@@ -95,7 +95,7 @@ class UNet(nn.Module):
         return torch.sigmoid(x)
 
 class UNetSegmentator:
-    def __init__(self, model_path="/home/s2pac/ElbrusBootcamp/cv_project/models/ForestYOLO.pth"):
+    def __init__(self, model_path="models/ForestYOLO.pth"):
         """
         Инициализация сегментатора на базе U-Net
         
