@@ -1,3 +1,4 @@
 models/ForestYOLO.pth filter=lfs diff=lfs merge=lfs -text
 models/FaceYOLO.pt filter=lfs diff=lfs merge=lfs -text
 models/ShipYOLO.pt filter=lfs diff=lfs merge=lfs -text
+*pt filter=lfs diff=lfs merge=lfs -text
